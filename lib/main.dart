@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:quiz_app/theme/color_scheme.dart';
 import 'package:quiz_app/theme/primary_text_theme.dart';
 import 'package:quiz_app/theme/text_theme.dart';
-import 'package:quiz_app/features/quiz/views/quiz.dart';
+import 'package:quiz_app/features/quiz/quiz.dart';
 
 void main() {
   runApp(const QuizApp());
