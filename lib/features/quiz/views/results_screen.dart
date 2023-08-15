@@ -1,13 +1,14 @@
-import 'package:flutter/cupertino.dart';
+import 'package:flutter/material.dart';
 import 'package:quiz_app/common_widgets/o2_button.dart';
 import 'package:quiz_app/features/quiz/data/questions.dart';
 import 'package:quiz_app/features/quiz/models/result_summary.dart';
 import 'package:quiz_app/features/quiz/widgets/questions_summary.dart';
 
 class ResultsScreen extends StatelessWidget {
-  const ResultsScreen({super.key, required this.answers});
+  const ResultsScreen({super.key, required this.answers, required this.restartQuiz});
 
   final List<String> answers;
+  final void Function() restartQuiz;
 
   List<ResultSummary> getSummaryData() {
     final List<ResultSummary> summary = [];
@@ -48,7 +49,7 @@ class ResultsScreen extends StatelessWidget {
             const SizedBox(height: 30),
             QuestionsSummary(summaryData),
             const SizedBox(height: 30),
-            O2Button(onPressed: () {}, child: const Text('Restart Quiz'))
+            O2Button(onPressed: restartQuiz, child: const Text('Restart Quiz'))
           ],
         ),
       ),
