@@ -1,3 +1,4 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
-TextTheme kTextTheme = Typography().white;
+TextTheme kTextTheme = GoogleFonts.latoTextTheme(Typography().white);

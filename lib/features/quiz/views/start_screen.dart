@@ -21,7 +21,11 @@ class StartScreen extends StatelessWidget {
             padding: EdgeInsets.only(top: 80, bottom: 30),
             child: Text(
               'Learn Flutter the fun way!',
-              style: TextStyle(fontSize: 24),
+              style: TextStyle(
+                fontSize: 24,
+                fontWeight: FontWeight.bold,
+                color: Color.fromARGB(255, 201, 153, 251),
+              ),
             ),
           ),
           O2Button.icon(
